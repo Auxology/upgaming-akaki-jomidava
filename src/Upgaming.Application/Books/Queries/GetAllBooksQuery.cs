@@ -36,7 +36,8 @@ internal sealed class GetAllBooksQuery
             // Validate data integrity - all books must have authors (domain rule)
             if (author is null)
                 return Result.Failure<IReadOnlyList<BookDto>>(BookApplicationErrors.MustHaveAuthor);
-
+            
+            // Map To DTO
             bookDtos.Add(new BookDto
             {
                 ID = book.ID,

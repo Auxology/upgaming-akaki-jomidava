@@ -6,6 +6,10 @@ using Upgaming.SharedKernel;
 
 namespace Upgaming.Application.Books.Queries;
 
+/// <summary>
+/// Query handler for retrieving all books by a specific author.
+/// Returns an empty collection if the author has no books, or a failure if the author doesn't exist.
+/// </summary>
 internal sealed class GetBooksByAuthorQuery
 {
     private readonly IBookRepository _bookRepository;
@@ -17,6 +21,8 @@ internal sealed class GetBooksByAuthorQuery
         _authorRepository = authorRepository;
     }
 
+    /// Retrieves all books for the specified author.
+    /// Success with a list of book DTOs (empty if no books), or NotFound failure if author doesn't exist.
     public async Task<Result<IReadOnlyList<BookDto>>> HandleAsync(int authorID,
         CancellationToken cancellationToken = default)
     {
