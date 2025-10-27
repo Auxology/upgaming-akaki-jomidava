@@ -11,7 +11,7 @@ namespace Upgaming.Application.Books.Queries;
 /// Validates data integrity by ensuring each book has a valid author reference,
 /// returning a failure result if any book lacks an author (domain violation).
 /// </summary>
-internal sealed class GetAllBooksQuery
+public sealed class GetAllBooksQuery
 {
     private readonly IBookRepository _bookRepository;
     private readonly IAuthorRepository _authorRepository;
