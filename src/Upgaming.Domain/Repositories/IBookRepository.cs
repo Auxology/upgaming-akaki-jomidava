@@ -11,4 +11,6 @@ public interface IBookRepository
     Task<IReadOnlyList<Book>> GetByAuthorIdAsync(int authorId, CancellationToken cancellationToken = default);
     
     Task<Book> AddAsync(Book book, CancellationToken cancellationToken = default);
+    
+    int GenerateNextId();
 }
