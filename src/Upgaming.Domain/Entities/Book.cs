@@ -15,7 +15,7 @@ public sealed class Book
     
     public int AuthorID { get; private set; }
     
-    public int PublicationYear { get; set; }
+    public int PublicationYear { get; private set; }
     
     private Book(int id, string title, int authorID, int publicationYear)
     {
