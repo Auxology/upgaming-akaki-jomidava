@@ -25,6 +25,7 @@
     <ProjectReference Include="..\Upgaming.Application\Upgaming.Application.csproj" />
     <ProjectReference Include="..\Upgaming.Domain\Upgaming.Domain.csproj" />
     <ProjectReference Include="..\Upgaming.Infrastructure\Upgaming.Infrastructure.csproj" />
+    <ProjectReference Include="..\Upgaming.SharedKernel\Upgaming.SharedKernel.csproj" />
   </ItemGroup>
 
 </Project>
