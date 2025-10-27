@@ -10,7 +10,7 @@ namespace Upgaming.Application.Books.Commands;
 /// Command handler for adding a new book to the catalog.
 /// Performs business validation and orchestrates the book creation process.
 /// </summary>
-internal sealed class AddBookCommand
+public sealed class AddBookCommand
 {
     private readonly IBookRepository _bookRepository;
     private readonly IAuthorRepository _authorRepository;

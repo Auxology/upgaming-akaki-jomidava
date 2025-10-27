@@ -10,7 +10,7 @@ namespace Upgaming.Application.Books.Queries;
 /// Query handler for retrieving all books by a specific author.
 /// Returns an empty collection if the author has no books, or a failure if the author doesn't exist.
 /// </summary>
-internal sealed class GetBooksByAuthorQuery
+public sealed class GetBooksByAuthorQuery
 {
     private readonly IBookRepository _bookRepository;
     private readonly IAuthorRepository _authorRepository;

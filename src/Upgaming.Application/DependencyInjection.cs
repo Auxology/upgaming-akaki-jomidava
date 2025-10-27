@@ -1,5 +1,5 @@
 using Microsoft.Extensions.DependencyInjection;
-using Upgaming.Application.Authors.Quries;
+using Upgaming.Application.Authors.Queries;
 using Upgaming.Application.Books.Commands;
 using Upgaming.Application.Books.Queries;
 

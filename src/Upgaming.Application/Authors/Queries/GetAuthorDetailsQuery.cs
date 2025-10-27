@@ -4,13 +4,13 @@ using Upgaming.Domain.Entities;
 using Upgaming.Domain.Repositories;
 using Upgaming.SharedKernel;
 
-namespace Upgaming.Application.Authors.Quries;
+namespace Upgaming.Application.Authors.Queries;
 
 /// <summary>
 /// Query to retrieve a single author with their complete list of books.
 /// Bonus feature(C): Returns author details with nested book list.
 /// </summary>
-internal sealed class GetAuthorDetailsQuery
+public sealed class GetAuthorDetailsQuery
 {
     private readonly IBookRepository _bookRepository;
     private readonly IAuthorRepository _authorRepository;
