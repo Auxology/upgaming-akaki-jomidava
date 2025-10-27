@@ -10,4 +10,8 @@
       <ProjectReference Include="..\Upgaming.Domain\Upgaming.Domain.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Books\Commands\" />
+    </ItemGroup>
+
 </Project>
