@@ -1,0 +1,7 @@
+﻿services:
+  upgaming.webapi:
+    image: upgaming.webapi
+    build:
+      context: .
+      dockerfile: src/Upgaming.WebApi/Dockerfile
+
