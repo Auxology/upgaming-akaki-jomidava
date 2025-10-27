@@ -8,7 +8,7 @@ public interface IBookRepository
     
     Task<IReadOnlyList<Book>> GetAllAsync(CancellationToken cancellationToken = default);
     
-    Task<IReadOnlyList<Book>> GetByAuthorIdAsync(int authorId, CancellationToken cancellationToken = default);
+    Task<IReadOnlyList<Book>> GetByAuthorIdAsync(int authorID, CancellationToken cancellationToken = default);
     
     Task<Book> AddAsync(Book book, CancellationToken cancellationToken = default);
     
