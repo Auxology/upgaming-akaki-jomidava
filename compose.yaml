@@ -8,6 +8,8 @@
       - 1433:1433
     volumes:
       - upgaming-sql-data:/var/lib/mssql
+      - upgaming-sql-backup:/var/opt/mssql/backup
+
   upgaming.webapi:
     image: upgaming.webapi
     depends_on:
@@ -23,4 +25,6 @@
 
 volumes:
   upgaming-sql-data:
+    driver: local
+  upgaming-sql-backup:
     driver: local
